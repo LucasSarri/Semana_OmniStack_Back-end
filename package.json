@@ -1,0 +1,23 @@
+{
+  "name": "Semana_OmniStack",
+  "version": "1.0.0",
+  "description": "Este repositório se trata do conteúdo abordado na Semana OmniStack 11, além de estudos externos feitos por mim sobre os conceitos citados em vídeo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasSarri/Semana_OmniStack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucasSarri/Semana_OmniStack/issues"
+  },
+  "homepage": "https://github.com/LucasSarri/Semana_OmniStack#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
