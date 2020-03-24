@@ -1,4 +1,6 @@
 const express = require('express');
+const crypto = require('crypto');
+const connection = require('./database/connection')
 const routes = express.Router();
 
 /*
@@ -26,9 +28,12 @@ routes.get('/', (req,res) =>
 
 routes.post('/users', (req,res) =>
 {
+    const { name, email, whatsapp, city, state} = req.body;
+    
+    const id = crypto.randomBytes(4).toString('HEX');
+
+
     return res.json({
-        evento: 'Semana OmniStack 11.0',
-        aluno: 'Lucas Sarri'
     });
 });
 

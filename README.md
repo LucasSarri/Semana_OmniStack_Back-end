@@ -10,3 +10,18 @@ Query Builder: table('users').select('*').where();
 
 Banco a ser utilizado: SQLite
 Query Builder: Knex.js
+
+--- Entidades e Funcionalidades ---
+-Entidades:
+*Ong(user): 
+*Caso(incident):
+
+-Funcionalidades:
+*Cadastro de usuario
+*Login de usuario
+*log out de usuario
+*cadastro de caso
+*deletar casos
+*listar casos especificos de uma ong
+*listar todos os casos
+*entrar em contato via whats e email
