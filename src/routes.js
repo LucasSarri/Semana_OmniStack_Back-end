@@ -19,14 +19,16 @@ const routes = express.Router();
     const body = req.body;
     console.log(params); 
 */
+
 routes.get('/', (req,res) =>
 {
     return res.send("Alo");
 });
 
-routes.post('/ongs', (req,res) =>
+routes.post('/users', (req,res) =>
 {
-    
+    const data = req.body;
+    return res.json();
 });
 
 module.exports = routes;
