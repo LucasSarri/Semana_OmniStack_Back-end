@@ -29,7 +29,7 @@ routes.get('/', (req,res) =>
 
 routes.post('/users', async (req,res) =>
 {
-    const { name, email, whatsapp, city, uf }= req.body;
+    const { name, email, whatsapp, city, uf } = req.body;
     const id = crypto.randomBytes(4).toString('HEX');
     
     await connection('users').insert({
