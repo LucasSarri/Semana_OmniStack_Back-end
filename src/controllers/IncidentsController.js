@@ -7,7 +7,7 @@ module.exports=
         const {page=1} = req.query;
 
         const [count] = await connection('incidents').count();
-        const incidents = await connection('incidents').join('users', 'users.id', '=', 'incidents.user_id').limit(5).offset((page-1)*5).select(['incidents.*','user.name','user.email','user.whatsapp','user.city','user.uf']);
+        const incidents = await connection('incidents').join('users', 'users.id', '=', 'incidents.user_id').limit(5).offset((page-1)*5).select(['incidents.*','users.name','users.email','users.whatsapp','users.city','users.uf']);
     
         res.header('X-Total-Count', count['count(*)']);
         return res.json(incidents);
